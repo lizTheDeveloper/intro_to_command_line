@@ -106,11 +106,10 @@ def calculate_total_cost(
     total_cost = total_flour_cost + total_sugar_cost + total_eggs_cost + total_milk_cost + total_water_cost + total_yeast_cost + total_salt_cost +total_butter_cost + total_baking_powder_cost + total_baking_soda_cost + total_chocolate_chips_cost + total_vanilla_extract_cost + total_cinnamon_cost + total_raisins_cost
 
     print(f"Total cost to make {recipe_name}: ${total_cost:.2f}")
+    return total_cost
 
 
-
-
-calculate_total_cost(
+pancake_cost = calculate_total_cost(
     recipe_name = "Pancakes",
     flour_needed = 0.3,  # kg
     sugar_needed = 0.05,  # kg
